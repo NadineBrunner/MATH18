@@ -1,0 +1,9 @@
+/pyvenv.cfg
+/lib
+/pip-selfcheck.json
+/man
+/src
+/twitter.cfg.json
+/session_state*
+/alphavantage.cfg
+/temp-plot.html

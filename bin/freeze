@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+cat >requirements.lock <<EOL
+# This file is generated and can be automatically updated with:
+# ./bin/freeze
+#
+# Example for source checkout:
+# -e git://github.com/foo/bar.git#egg=bar
+# then reinstall and run ./bin/freeze
+EOL
+
+pip freeze | grep -v `git remote get-url origin` | tee -a requirements.lock
